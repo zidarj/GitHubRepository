@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GHRepositoryTableViewCell" rowHeight="176" id="EV3-2b-7NJ" customClass="GHRepositoryTableViewCell" customModule="GitHubRepository" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EV3-2b-7NJ" id="TFK-C8-ztH">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rQJ-bM-Evs">
+                        <rect key="frame" x="20" y="10" width="440" height="156"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="left" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qts-nJ-aBL">
+                                <rect key="frame" x="0.0" y="0.0" width="440" height="75.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numberOfWat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy6-hh-11f">
+                                <rect key="frame" x="0.0" y="80.5" width="440" height="75.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rQJ-bM-Evs" firstAttribute="top" secondItem="TFK-C8-ztH" secondAttribute="top" constant="10" id="7DY-h5-4rC"/>
+                    <constraint firstAttribute="bottom" secondItem="rQJ-bM-Evs" secondAttribute="bottom" constant="10" id="QJd-lq-pbl"/>
+                    <constraint firstAttribute="trailing" secondItem="rQJ-bM-Evs" secondAttribute="trailing" constant="10" id="Zdq-XN-YuV"/>
+                    <constraint firstItem="rQJ-bM-Evs" firstAttribute="leading" secondItem="TFK-C8-ztH" secondAttribute="leading" constant="20" id="mvr-0A-4Tw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="fRB-iQ-Ucf"/>
+            <connections>
+                <outlet property="lastUpdateLabel" destination="jy6-hh-11f" id="8Q4-YB-dTc"/>
+                <outlet property="repositoryName" destination="qts-nJ-aBL" id="b25-4t-nIU"/>
+            </connections>
+            <point key="canvasLocation" x="237.68115942028987" y="77.008928571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
